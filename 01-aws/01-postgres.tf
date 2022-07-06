@@ -1,5 +1,6 @@
 data "aws_subnet_ids" "postgres" {
-  vpc_id =vpc-02d1d9d0df74292f5
+  vpc_id =aws_vpc.dhana-vpc.id
+
 }
 resource "aws_db_subnet_group" "db-subnet-grp" {
   subnet_ids = data.aws_subnet_ids.postgres.ids

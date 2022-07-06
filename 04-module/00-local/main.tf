@@ -5,7 +5,7 @@ module "provider"{
 module "website_s3_bucket" {
   source = "./s3-static-website"
 
-  bucket_name = "s3-static-website-rajesh"
+  bucket_name = "s3-static-website-dhana"
   tags = {
     Terraform   = "true"
   }

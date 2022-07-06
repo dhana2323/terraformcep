@@ -4,10 +4,10 @@ module "provider"{
 }
 
 variable "region"{
-    default = "ap-southeast-1"
+    default = "us-west-2"
 }
 variable "zone"{
-  default = "ap-southeast-1a"
+  default = "us-west-2a"
 }
 
 module "ec2_instances" {
